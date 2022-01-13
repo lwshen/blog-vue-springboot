@@ -12,6 +12,7 @@
  Date: 04/28/2018 09:14:32 AM
 */
 
+DROP DATABASE IF EXISTS `blog`;
 CREATE DATABASE `blog` DEFAULT character SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `blog`;
 
