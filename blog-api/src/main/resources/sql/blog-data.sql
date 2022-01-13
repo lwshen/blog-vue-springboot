@@ -13,8 +13,7 @@ File Encoding         : 65001
 Date: 2018-02-01 15:21:27
 */
 
-CREATE DATABASE blog-data DEFAULT character SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE blog-data;
+USE `blog`;
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -63,8 +62,8 @@ INSERT INTO `me_category` VALUES ('5', '/category/language.png', '编程语言',
 -- ----------------------------
 -- Records of me_comment
 -- ----------------------------
-INSERT INTO `me_comment` VALUES ('1', '你辛苦了', '2018-01-31 13:29:01', '1', '15');
-INSERT INTO `me_comment` VALUES ('2', '啦啦啦', '2018-01-31 16:12:31', '1', '1');
+INSERT INTO `me_comment` VALUES ('1', '你辛苦了', '2018-01-31 13:29:01', '1', '15', NULL, NULL, NULL);
+INSERT INTO `me_comment` VALUES ('2', '啦啦啦', '2018-01-31 16:12:31', '1', '1', NULL, NULL, NULL);
 
 
 

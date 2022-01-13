@@ -3,9 +3,11 @@ image:
 
 tasks:
   - init: |
+      gp await-port 3306
       mysql < blog-api/src/main/resources/sql/blog-schema.sql
       mysql < blog-api/src/main/resources/sql/blog-data.sql
       mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';"
+  - command: redis-server
   - init: |
       cd blog-api
       mvn install -DskipTests=true
