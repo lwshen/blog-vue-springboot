@@ -13,8 +13,8 @@ File Encoding         : 65001
 Date: 2018-02-01 15:21:27
 */
 
-CREATE DATABASE blog-data DEFAULT character SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE blog-data;
+CREATE DATABASE `blog-data` DEFAULT character SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `blog-data`;
 
 SET FOREIGN_KEY_CHECKS=0;
 
